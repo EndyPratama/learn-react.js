@@ -7,13 +7,31 @@ Menulis code untuk membuat bagian visual dari situs web dengan React sangat miri
 
 Menulis JSX hampir sama dengan menulis HTML. Anda dapat menggunakan tag yang benar-benar sama seperti HTML, seperti ```<h1>``` dan ```<h2>``` untuk judul atau ```<p>``` untuk paragraf, dan ```<div>``` untuk kolom dan container.
 
-Meskipun JSX sangat mirip dengan HTML, ada beberapa perbedaan. Seperti yang ditunjukkan digambar sebelah kiri, beberapa element tidak dapat diletakkan didalam return. Jika Anda memiliki lebih dari satu element, gabungkan element-element tersebut ke dalam satu tag div seperti contoh disebelah kanan.
+Meskipun JSX sangat mirip dengan HTML, ada beberapa perbedaan. Seperti yang ditunjukkan digambar sebelah kiri, beberapa element tidak dapat diletakkan didalam return. Jika Anda memiliki lebih dari satu element, gabungkan element-element tersebut ke dalam satu tag div seperti contoh dibawah ini.
 
-<a href="https://github.com/endy-gigih-pratama">
-  <img height="200em" src="https://user-images.githubusercontent.com/54503473/142291738-87e97d59-0d68-4917-b50b-45ec277956e9.png"/>
-  <img height="200em" src="https://user-images.githubusercontent.com/54503473/142291956-73104ef8-6e13-4104-8ef0-e97d30f30d72.png"/>
-</a>
-<br><br>
+Beberapa element dapat menyebabkan error!
+
+```js
+render(){
+  return(
+    <h1>Heading h1</h1>
+    <h2>Heading h2</h2>
+  )
+}
+```
+
+Grupkan kedalam satu tag!
+
+```js
+render(){
+  return(
+    <div>
+      <h1>Heading h1</h1>
+      <h2>Heading h2</h2>
+    </div>
+  )
+}
+```
 
 Ketika JSX diletakkan di antara simbol {/* dan */}, teks di dalamnya akan menjadi komentar. Komentar tidak akan ditampilkan di browser dan tidak akan mengubah hasil code Anda. Sebagian editor teks akan menunjukkan komentar dalam teks warna abu-abu.
   
@@ -162,3 +180,7 @@ render() {
 
   export default App;
 ```
+
+## State & Event
+
+Perkiraan Update 19/11/2021. Stay tuned...
