@@ -414,6 +414,8 @@ Di sini, Anda akan belajar cara meneruskan argument ke method. Pertama, method h
   <button onClick={() => {this.handleClick('Dia')}}>Dia</button>    //nilai dari dalam handleClick akan dikirim sebagai parameter
 ```
 
+### Contoh penereapannya
+  
 ```js
   
   import React from 'react';
